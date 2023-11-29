@@ -2,6 +2,7 @@
  class Car {
      public $brand;
      private $mileage;
+     static $describe ="I am mostly made out of metal <br>";
 
      public function __construct($b, $m){
         $this->brand=$b;
@@ -12,6 +13,9 @@
     }
     public function increaseMileage($amount) {
         $this->mileage = $this->mileage + $amount ;
+    }
+    static function makeNoise() {
+        echo "shmecko";
     }
  }
 ?>
